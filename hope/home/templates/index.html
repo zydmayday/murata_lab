@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>murata homepage</title>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+	<script type="text/javascript" src='bootstrap/js/bootstrap.min.js'></script>
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet/less" type="text/css" href="home.less">
+	<link rel="stylesheet" type="text/css" href="home.css">
+	<!--<link rel="stylesheet" type="text/css" href="home.less"> -->
+	<!--<script src="http://cdn.bootcss.com/less.js/1.7.0/less.min.js"></script> -->
+</head>
+<body>
+	<div class='container' id='main'>
+		<div class='jumbotron' id='header'>
+			<!--<h1>村田研究室</h1>-->
+			<img class="logo" border="0px" src="logo.png" alt="Logo">
+			<p>村田研究室は、早稲田大学 先進理工学部 電気・情報生命工学科の研究室です。</p>
+		</div>
+		<div id='main-body'>
+			<div class='row main-block'>
+				<div class='col-md-12'>
+					<h2>About Murata Lab.</h2>
+					当研究室では、人間特有の情報処理様式である「学習」を数理モデル化し、
+		            様々な分野に応用する研究を行っています。<br>
+		            研究テーマは学生が各自で決め、自分の研究を進めていくというスタイルをとっています。<br>
+		            当研究室で行っている研究や手法については、
+		            <a class="menulink" href="/members">Members</a>
+		            や
+		            <a class="menulink" href="/researches">Research</a>
+		            を参照してください。
+				</div>
+			</div>
+			<div class='row main-block'>
+				<div class='col-md-6'>
+			        <h2>News</h2>
+			        <div class='pre-scrollable roll bg-info'>
+			        	{% if news %}
+			        		{%for n in news%}
+			        			<span>n</span><br>
+			        		{%endfor%}
+			        	{% endif %}
+					</div>
+		        </div>
+		        <div class='col-md-6' id='twitter'>
+			        <div class='box col-white b-wid1'>
+				        <a class="twitter-timeline" href="https://twitter.com/murata_waseda" data-widget-id="616064394762416128">@murata_wasedaさんのツイート</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+				        <div class='cl'></div>
+				    </div>
+		        </div>
+			</div>
+			<div class='row main-block' id='members'>
+		        <h2>Members</h2>
+		        <div class='alert alert-warning description'><a class="menulink" href="/members">→詳細を見る</a></div>        
+	            <ul class='member-list'>
+					<div class='thumbnail member-bedge'>
+						<a href="/members/Noboru%20Murata"><img alt="Icon" src="icon.png" /></a>
+						<h5>Noboru Murata</h5>
+					</div>
+					<div class='thumbnail member-bedge'>
+						<a href="/members/Noboru%20Murata"><img alt="Icon" src="icon.png" /></a>
+						<h5>Sho Sonoda</h5>
+					</div>
+					<div class='thumbnail member-bedge'>
+						<a href="/members/Noboru%20Murata"><img alt="Icon" src="icon2.png" /></a>
+						<h5>Yuki Kaneda</h5>
+					</div>
+					<div class='thumbnail member-bedge'>
+						<a href="/members/Noboru%20Murata"><img alt="Icon" src="icon.png" /></a>
+						<h5>Zhang Yidong</h5>
+					</div>
+					<div class='thumbnail member-bedge'>
+						<a href="/members/Noboru%20Murata"><img alt="Icon" src="icon.png" /></a>
+						<h5>flalova anezka</h5>
+					</div>
+					<div class='thumbnail member-bedge'>
+						<a href="/members/Noboru%20Murata"><img alt="Icon" src="icon.png" /></a>
+						<h5>Noboru Murata</h5>
+					</div>
+					<div class='thumbnail member-bedge'>
+						<a href="/members/Noboru%20Murata"><img alt="Icon" src="icon.png" /></a>
+						<h5>Noboru Murata</h5>
+					</div>
+					<div class='thumbnail member-bedge'>
+						<a href="/members/Noboru%20Murata"><img alt="Icon" src="icon.png" /></a>
+						<h5>Noboru Murata</h5>
+					</div>
+					<div class='thumbnail member-bedge'>
+						<a href="/members/Noboru%20Murata"><img alt="Icon" src="icon.png" /></a>
+						<h5>Noboru Murata</h5>
+					</div>
+					<div class='thumbnail member-bedge'>
+						<a href="/members/Noboru%20Murata"><img alt="Icon" src="icon.png" /></a>
+						<h5>Noboru Murata</h5>
+					</div>
+					<div class='thumbnail member-bedge'>
+						<a href="/members/Noboru%20Murata"><img alt="Icon" src="icon.png" /></a>
+						<h5>Noboru Murata</h5>
+					</div>
+					<div class='thumbnail member-bedge'>
+						<a href="/members/Noboru%20Murata"><img alt="Icon" src="icon.png" /></a>
+						<h5>Noboru Murata</h5>
+					</div>
+	            </ul>
+		        <div class='cl'></div>
+			</div>
+			<div class='row main-block' id='researches'>
+				<h2>Researches</h2>
+				<div class='panel panel-default description'>
+					<div class='alert alert-danger'>村田研でよく用いられる手法について簡単に紹介します。</div>
+					<div class='panel-body'>より詳しく知りたい場合は、それぞれの手法をクリックしてください。</div>
+				</div>
+				<ul  class='list-group' id='research-list'>
+					<li class='list-group-item'>
+                    	<a href="/researches/neural_net"><img src='neural_net.png'></a>                    
+                    	<span class='research-desc'>ニューラルネットワーク</span>
+                    	<p class='text-info research-title'>人間の脳の神経回路の仕組みを模したモデル</p>
+                    </li>
+                    <li class='list-group-item'>
+                    	<a href="/researches/neural_net"><img src='neural_net.png'></a>                    
+                    	<span class='research-desc'>カーネル法</span>
+                    	<p class='text-info research-title'>線形のモデルで非線形の問題を解くという逆転の発想</p>
+                    </li>
+                    <li class='list-group-item'>
+                    	<a href="/researches/neural_net"><img src='neural_net.png'></a>                    
+                    	<span class='research-desc'>独立成分分析</span>
+                    	<p class='text-info research-title'>統計的性質に基づいた信号処理</p>
+                    </li>
+                    <li class='list-group-item'>
+                    	<a href="/researches/neural_net"><img src='reinforcement.png'></a>                    
+                    	<span class='research-desc'>強化学習</span>
+                    	<p class='text-info research-title'>報酬と罰則で学習機械を最適化する</p>
+                    </li>
+				</ul>
+			</div>
+			<div class='row main-block' id='publications'>
+				<h2>Researches</h2>
+				<div class='alert alert-success description'>代表的な論文（外部サイトにジャンプします。）</div>
+				<ul  class='list-group' id='publication-list'>
+					<li class='list-group-item'>
+						<span class='paper-title'>Sampling Hidden Parameters from Oracle Distribution (ICANN2014)</span>
+						<span class='label label-primary'>園田</span>
+						<span class='label label-primary'>村田</span>
+					</li>
+					<li class='list-group-item'>
+						<span class='paper-title'>Distance-based Change-Point Detection with Entropy Estimation (WITMSE2013)</span>
+						<span class='label label-primary'>村田</span>
+						<span class='label label-primary'>越島(2013年度卒)</span>
+						<span class='label label-primary'>日野（筑波大)</span>
+					</li>
+					<li class='list-group-item'>
+						<span class='paper-title'>Sampling Hidden Parameters from Oracle Distribution (ICANN2014)</span>
+						<span class='label label-primary'>園田</span>
+						<span class='label label-primary'>村田</span>
+					</li>
+					<li class='list-group-item'>
+						<span class='paper-title'>Sampling Hidden Parameters from Oracle Distribution (ICANN2014)</span>
+						<span class='label label-primary'>園田</span>
+						<span class='label label-primary'>村田</span>
+					</li>
+				</ul>
+			</div>
+			<div class='row main-block' id='photo'>
+				<h2>Photos</h2>
+				<div class='alert description'><a class="menulink" href="/members">→他の写真を見る</a></div>
+				<a data-flickr-embed="true"  href="https://www.flickr.com/photos/132653805@N04/albums/72157660399206244" title="2015 Winter Ski&amp;Snowboard Trip">
+					<img src="https://farm6.staticflickr.com/5644/23687677580_dd3003c458_z.jpg" width="1000" height="750" alt="2015 Winter Ski&amp;Snowboard Trip">
+				</a>
+				<script charset="utf-8">
+					!function(e,t,n,r,c){var i=function(e,t){var n,r="IE",c=document.createElement("B"),i=document.documentElement;return e&&(r+=" "+e,t&&(r=t+" "+r)),c.innerHTML="<!--[if "+r+']><b id="iecctest"></b><![endif]-->',i.appendChild(c),n=!!document.getElementById("iecctest"),i.removeChild(c),n};if(!e[n]&&(e[n]={process:function(t){(e[n].q=e[n].q||[]).push(t)}},!i(8,"lte"))){var d=t.createElement(r),m=t.getElementsByTagName(r)[0];d.async=1,d.src=c,m.parentNode.insertBefore(d,m)}}(window,document,"FlickrEmbedr","script","https://embedr.flickr.com/assets/embedr-loader.js"),window.FlickrEmbedr.process("inline");
+				</script>
+			</div>
+		</div>
+
+		<div id='footer'>
+			<div id='links'>
+				<a href="http://www.waseda.jp/top/" style="font-size:12px;text-decoration:none;" target="_blank">早稲田大学</a>
+		        ｜
+		        <a href="http://www.ase.sci.waseda.ac.jp" style="font-size:12px;text-decoration:none;" target="_blank">先進理工学部</a>
+		        ｜
+		        <a href="http://www.eb.waseda.ac.jp/top/" style="font-size:12px;text-decoration:none;" target="_blank">電気・情報生命工学科</a><br>
+			</div>
+			<div id='access'>
+				<div>63号館06-17、06-18（若尾研と高松研の間</div>
+				<div>
+					<a href="mailto:noboru.murata@eb.waseda.ac.jp">
+						<img width="200px" border="0," src="mail.png">
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
