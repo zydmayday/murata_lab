@@ -10,6 +10,7 @@ class News(models.Model):
 	1. active selector form
 	2. if want to add links in the body
 	3. if need the begin and end date
+	4. for 2, it would be better to save all links in one model
 	'''
 	body = models.CharField(max_length=140)
 	pub_date = models.DateField('date published')

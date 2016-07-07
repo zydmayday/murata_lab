@@ -1,0 +1,95 @@
+@color: #4D926F;
+@brand-primary: darken(#428bca, 6.5%);
+@brand-success: #5cb85c;
+@brand-info:    #5bc0de;
+@brand-warning: #f0ad4e;
+@brand-danger:  #d9534f;
+@brand-success-lighter: lighten(#ecb8ec, 33.5%);
+@max-height: 300px;
+@bedge-size: 120px;
+@description-size: 18px;
+
+#header{
+
+}
+
+#main-body {
+	.main-block{
+		padding-bottom: 3%;
+		.description{
+			font-size: @description-size;
+		}
+	}
+	.roll{
+		max-height: @max-height;
+	}
+
+	#twitter{
+		max-height: @max-height;	
+	}
+
+	#members{
+		.description{
+			font-size: @description-size
+		}
+		.member-list{
+			.thumbnail{
+				display: inline-block;
+			}
+			.member-bedge{
+				display: inline-block;
+				border: 5px solid #ddd;
+				width: @bedge-size;
+				height: @bedge-size;
+				img{
+					width: 50px;
+					height: 50px;
+				}
+			}
+		}
+	}
+
+	#researches{
+		#research-list{
+			img{
+				width: 4%;
+				height: 4%;
+			}
+			.research-desc{
+				font-size: 16px;
+			}
+			.research-title{
+				display: inline-block;
+			}
+		}
+	}
+
+	#publications{
+		.description{
+			font-size: @description-size
+		}
+		#publication-list{
+			font-size: 15px;
+			font-weight: bold;
+			.label{
+				font-size: 100%;
+			}
+		}
+	}
+
+	#photo{
+		.description{
+			background-color: @brand-success-lighter;
+			font-size: @description-size
+		}
+	}
+}
+
+#footer{
+	display: table;
+	margin: 0 auto;
+	#links{
+		
+	}
+}
+
