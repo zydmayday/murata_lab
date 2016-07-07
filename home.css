@@ -1,0 +1,57 @@
+
+#main-body .main-block {
+    padding-bottom: 3%;
+}
+#main-body .main-block .description {
+    font-size: 18px;
+}
+#main-body .roll {
+    max-height: 300px;
+}
+#main-body #twitter {
+    max-height: 300px;
+}
+#main-body #members .description {
+    font-size: 18px;
+}
+#main-body #members .member-list .thumbnail {
+    display: inline-block;
+}
+#main-body #members .member-list .member-bedge {
+    border: 5px solid #ddd;
+    display: inline-block;
+    height: 120px;
+    width: 120px;
+}
+#main-body #members .member-list .member-bedge img {
+    height: 50px;
+    width: 50px;
+}
+#main-body #researches #research-list img {
+    height: 4%;
+    width: 4%;
+}
+#main-body #researches #research-list .research-desc {
+    font-size: 16px;
+}
+#main-body #researches #research-list .research-title {
+    display: inline-block;
+}
+#main-body #publications .description {
+    font-size: 18px;
+}
+#main-body #publications #publication-list {
+    font-size: 15px;
+    font-weight: bold;
+}
+#main-body #publications #publication-list .label {
+    font-size: 100%;
+}
+#main-body #photo .description {
+    background-color: #ffffff;
+    font-size: 18px;
+}
+#footer {
+    display: table;
+    margin: 0 auto;
+}
