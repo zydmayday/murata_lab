@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block members %}
+{% load render_tags %}
+<h2>Members</h2>
+<div class='alert alert-warning description'><a class="menulink" href="/members">→詳細を見る</a></div>
+<ul class='member-list'>
+    {% for m in members %}
+        <div class='thumbnail member-bedge'>
+            <a href="{% url 'member:member' m.id %}"><img alt="Icon" src="{{ m.icon.url|render_icon_url }}" /></a>
+            <h5>Noboru Murata</h5>
+        </div>
+    {% endfor %}
+</ul>
+{% endblock %}

@@ -15,8 +15,9 @@ Including another URLconf
 """
 from django.conf.urls import url, include
 from django.contrib import admin
-
+app_name='hope'
 urlpatterns = [
 	url(r'^home/', include('home.urls')),
+	url(r'^member/', include('member.urls')),
     url(r'^admin/', admin.site.urls),
 ]

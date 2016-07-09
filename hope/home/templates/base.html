@@ -22,7 +22,7 @@
 			<p>村田研究室は、早稲田大学 先進理工学部 電気・情報生命工学科の研究室です。</p>
 		</div>
 		<div id='main-body'>
-			<div class='row main-block'>
+			<div class='row main-block' id='intro'>
 				<div class='col-md-12'>
 					<h2>About Murata Lab.</h2>
 					当研究室では、人間特有の情報処理様式である「学習」を数理モデル化し、
@@ -35,78 +35,11 @@
 		            を参照してください。
 				</div>
 			</div>
-			<div class='row main-block'>
-				<div class='col-md-6'>
-			        <h2>News</h2>
-			        <div class='pre-scrollable roll bg-info'>
-			        	{% if news %}
-			        		{%for n in news%}
-			        			<span>{{n}}</span><br>
-			        		{%endfor%}
-			        	{% endif %}
-					</div>
-		        </div>
-		        <div class='col-md-6' id='twitter'>
-			        <div class='box col-white b-wid1'>
-				        <a class="twitter-timeline" href="https://twitter.com/murata_waseda" data-widget-id="616064394762416128">@murata_wasedaさんのツイート</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-				        <div class='cl'></div>
-				    </div>
-		        </div>
+			<div class='row main-block' id='news_twitter'>
+				{% block news_twitter %}{% endblock %}
 			</div>
 			<div class='row main-block' id='members'>
-		        <h2>Members</h2>
-		        <div class='alert alert-warning description'><a class="menulink" href="/members">→詳細を見る</a></div>        
-	            <ul class='member-list'>
-					<div class='thumbnail member-bedge'>
-						<a href="/members/Noboru%20Murata"><img alt="Icon" src="icon.png" /></a>
-						<h5>Noboru Murata</h5>
-					</div>
-					<div class='thumbnail member-bedge'>
-						<a href="/members/Noboru%20Murata"><img alt="Icon" src="icon.png" /></a>
-						<h5>Sho Sonoda</h5>
-					</div>
-					<div class='thumbnail member-bedge'>
-						<a href="/members/Noboru%20Murata"><img alt="Icon" src="icon2.png" /></a>
-						<h5>Yuki Kaneda</h5>
-					</div>
-					<div class='thumbnail member-bedge'>
-						<a href="/members/Noboru%20Murata"><img alt="Icon" src="icon.png" /></a>
-						<h5>Zhang Yidong</h5>
-					</div>
-					<div class='thumbnail member-bedge'>
-						<a href="/members/Noboru%20Murata"><img alt="Icon" src="icon.png" /></a>
-						<h5>flalova anezka</h5>
-					</div>
-					<div class='thumbnail member-bedge'>
-						<a href="/members/Noboru%20Murata"><img alt="Icon" src="icon.png" /></a>
-						<h5>Noboru Murata</h5>
-					</div>
-					<div class='thumbnail member-bedge'>
-						<a href="/members/Noboru%20Murata"><img alt="Icon" src="icon.png" /></a>
-						<h5>Noboru Murata</h5>
-					</div>
-					<div class='thumbnail member-bedge'>
-						<a href="/members/Noboru%20Murata"><img alt="Icon" src="icon.png" /></a>
-						<h5>Noboru Murata</h5>
-					</div>
-					<div class='thumbnail member-bedge'>
-						<a href="/members/Noboru%20Murata"><img alt="Icon" src="icon.png" /></a>
-						<h5>Noboru Murata</h5>
-					</div>
-					<div class='thumbnail member-bedge'>
-						<a href="/members/Noboru%20Murata"><img alt="Icon" src="icon.png" /></a>
-						<h5>Noboru Murata</h5>
-					</div>
-					<div class='thumbnail member-bedge'>
-						<a href="/members/Noboru%20Murata"><img alt="Icon" src="icon.png" /></a>
-						<h5>Noboru Murata</h5>
-					</div>
-					<div class='thumbnail member-bedge'>
-						<a href="/members/Noboru%20Murata"><img alt="Icon" src="icon.png" /></a>
-						<h5>Noboru Murata</h5>
-					</div>
-	            </ul>
-		        <div class='cl'></div>
+				{% block members %}{% endblock %}
 			</div>
 			<div class='row main-block' id='researches'>
 				<h2>Researches</h2>

@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% block news_twitter %}
+<div class='col-md-6'>
+    <h2>News</h2>
+    <div class='pre-scrollable roll bg-info'>
+    	{% if news %}
+    		{%for n in news%}
+    			<span>{{n.pub_date|date:'Y-m-d'}}</span> : <span>{{n}}</span><br>
+    		{%endfor%}
+    	{% endif %}
+	</div>
+</div>
+<div class='col-md-6' id='twitter'>
+    <div class='box col-white b-wid1'>
+        <a class="twitter-timeline" href="https://twitter.com/murata_waseda" data-widget-id="616064394762416128">@murata_wasedaさんのツイート</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+        <div class='cl'></div>
+    </div>
+</div>
+{% endblock %}
